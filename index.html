@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub自动部署测试成功！</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 600px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .emoji {
+            font-size: 64px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+
+        .info-box {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: left;
+        }
+
+        .info-label {
+            font-size: 0.9em;
+            opacity: 0.8;
+            margin-bottom: 5px;
+        }
+
+        .info-value {
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        .checklist {
+            text-align: left;
+            margin: 30px 0;
+        }
+
+        .checklist-item {
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .check-icon {
+            font-size: 1.2em;
+        }
+
+        .deploy-time {
+            margin-top: 30px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            font-size: 0.9em;
+        }
+
+        .repo-link {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 12px 30px;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .repo-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="emoji">🎉</div>
+        <h1>GitHub自动部署测试成功！</h1>
+        <p class="subtitle">验证OpenClaw配置正常工作</p>
+
+        <div class="info-box">
+            <div class="info-label">配置状态</div>
+            <div class="info-value">全部正常 ✅</div>
+        </div>
+
+        <div class="checklist">
+            <div class="checklist-item">
+                <span class="check-icon">✅</span>
+                <span>Git配置 - 用户名: yunweiguo</span>
+            </div>
+            <div class="checklist-item">
+                <span class="check-icon">✅</span>
+                <span>SSH密钥 - 已配置</span>
+            </div>
+            <div class="checklist-item">
+                <span class="check-icon">✅</span>
+                <span>GitHub连接 - 推送成功</span>
+            </div>
+            <div class="checklist-item">
+                <span class="check-icon">✅</span>
+                <span>自动部署 - 工作流已设置</span>
+            </div>
+        </div>
+
+        <div class="deploy-time">
+            部署时间: <script>document.write(new Date().toLocaleString('zh-CN'))</script>
+        </div>
+
+        <a href="https://github.com/yunweiguo/test-github-repo" class="repo-link" target="_blank">
+            访问仓库 →
+        </a>
+    </div>
+</body>
+</html>
